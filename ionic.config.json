@@ -1,0 +1,7 @@
+{
+  "name": "DarjiBhai",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
