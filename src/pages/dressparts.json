@@ -1,0 +1,119 @@
+{
+    "neck": [
+        {
+            "id":"neck_01",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1709261856/Bazaart_20240301_075648_443_sjnao3.png"
+        },
+        {
+            "id":"neck_02",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1709261855/Bazaart_20240301_075836_804_aytqfm.png"
+        },
+        {
+            "id":"neck_03",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1709261855/Bazaart_20240301_075756_723_cgx0ke.png"
+        },
+        {
+            "id":"neck_04",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1709261854/Bazaart_20240301_075854_357_clckl6.png"
+        },
+        {
+            "id":"neck_05",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1709261854/Bazaart_20240301_080026_007_xj3xml.png"
+        },
+        {
+            "id":"neck_06",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1709261854/Bazaart_20240301_075818_002_tgroh7.png"
+        },
+        {
+            "id":"neck_07",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1709261854/Bazaart_20240301_080046_339_gl1nrp.png"
+        }
+    ],
+
+    "hands": [
+        {
+            "id":"hands_01",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1709265431/IMG_20240301_092610_azcb3l.png"
+        },
+        {
+            "id":"hands_02",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1709265431/IMG_20240301_092439_wkmthn.png"
+        },
+        {
+            "id":"hands_03",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1709265431/IMG_20240301_092457_h8dmnb.png"
+        },
+        {
+            "id":"hands_04",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1709265431/IMG_20240301_092551_k0z9fj.png"
+        },
+        {
+            "id":"hands_05",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1709265431/IMG_20240301_092536_evw4tu.png"
+        },
+        {
+            "id":"hands_06",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1709264584/Bazaart_20240301_090324_867_sfyku5.png"
+        },
+        {
+            "id":"hands_07",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1709264584/Bazaart_20240301_090451_483_turzi9.png"
+        },
+        {
+            "id":"hands_08",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1709264584/Bazaart_20240301_090433_255_ajzurs.png"
+        },
+        {
+            "id":"hands_09",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1709264585/Bazaart_20240301_090226_592_ycca5g.png"
+        },
+        {
+            "id":"hands_10",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1709265431/IMG_20240301_092516_fl6lt4.png"
+        }
+        
+    ],
+    "lengths": [
+        {
+            "id":"lengths_01",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1707018708/Bazaart_20240204_072912_096_gymerd.png"
+        },
+        {
+            "id":"lengths_02",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1707018708/Bazaart_20240203_063416_833_hivwss.png"
+        },
+        {
+            "id":"lengths_03",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1707018707/Bazaart_20240204_072728_817_kvch72.png"
+        },
+        {
+            "id":"lengths_04",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1707018707/Bazaart_20240204_072817_013_wuwbjm.png"
+        },
+        {
+            "id":"lengths_05",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1707018707/Bazaart_20240204_073154_560_w58qqn.png"
+        },
+        {
+            "id":"lengths_06",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1707018707/Bazaart_20240204_073257_093_h9yq4i.png"
+        },
+        {
+            "id":"lengths_07",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1707018707/Bazaart_20240204_072848_764_qeygqz.png"
+        },
+        {
+            "id":"lengths_08",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1707018706/Bazaart_20240204_073007_140_fcicgb.png"
+        },
+        {
+            "id":"lengths_09",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1707018706/Bazaart_20240204_072756_355_c1vpxy.png"
+        },
+        {
+            "id":"lengths_10",
+            "imageUrl" : "https://res.cloudinary.com/dosckylqx/image/upload/v1707018706/Bazaart_20240204_073126_897_kh29cm.png"
+        }
+        
+    ]
+}

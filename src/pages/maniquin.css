@@ -1,0 +1,145 @@
+
+.maniquin-bg-container{
+    background-color: silver;
+}
+
+.maniquin-container{
+    display: flex;
+    justify-content: center;
+}
+/* .main-maniquin{
+    height: 83vh;
+} */
+.add-item-btn{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(36, 13, 27);
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    border: 0px solid;
+}
+.maniquin-add-item-container{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+
+}
+.maniquin-add-item{
+    height: 130px;
+    width: 130px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+ /* SideBar Styling */
+
+.a {
+    background-color: #a0a1a8;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: right ease 5s;
+  }
+  
+  .a.active {
+    right: 0%;
+    transition: 3s;
+  }
+  .close{
+    border: 0px solid;
+    color : white;
+    font-size: 60px;
+    margin: 20px;
+    cursor: pointer;
+  }
+.tops-heading{
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    margin-left: 20px;
+}
+.maniquin-item-container{
+    margin-top: 50px;
+}
+.side-bar-data-container{
+    background-color: rgb(142, 142, 149);
+    width: 100%;
+    height: 450px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+}
+
+.hands-design{
+  
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+}
+.selected{
+   
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+    background-color: grey;
+    border-color: rgb(90, 242, 8);
+    box-shadow:rgb(90, 242, 8);
+}
+
+.maniquin-apply-btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.maniquin-apply-btn{
+    width: 250px;
+    height: 80px;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: #8e6161;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+.selected-items-maniquinn{
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.selected-item{
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px;
+}
+.maniquin-selected-items-container{
+    display: flex;
+}
+.selected-item-remove{
+    position: absolute;
+    top:-10%;
+    right: 5%;
+    font-size: 40px;
+    /* color: #000; */
+}
+.selected-items-container{
+    position: relative;
+}
+
+.slick-slide > div {
+    margin: 0 10px;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color:orange !important;
+  }
+  .min-he{
+    min-height: 2000px;
+    overflow: auto;
+  }
