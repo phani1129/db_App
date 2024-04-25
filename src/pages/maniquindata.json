@@ -1,0 +1,229 @@
+[
+    
+    {   "main_maniquin" : [
+            "./Assets/main-maniquinn/main-1.jpeg",
+            "./Assets/main-maniquinn/main-2.jpeg",
+            "./Assets/main-maniquinn/main-3.jpeg",
+            "./Assets/main-maniquinn/main-4.jpeg",
+            "./Assets/main-maniquinn/main-5.jpeg",
+            "./Assets/main-maniquinn/main-6.jpeg"
+        ]
+    },
+    { "tops":[
+     {
+        "top_id" : "top_01",
+        "length_id" : "",
+        "main_image" : "./Assets/yellow-top/1.jpeg",
+        "maniquin_image" : [
+            "./Assets/yellow-top/1.jpeg",
+            "./Assets/yellow-top/2.jpeg",
+            "./Assets/yellow-top/3.jpeg",
+            "./Assets/yellow-top/4.jpeg",
+            "./Assets/yellow-top/5.jpeg",
+            "./Assets/yellow-top/6.jpeg"
+        ]
+
+    },
+    {
+        "top_id" : "top_02",
+        "length_id" : "",
+        "main_image" : "./Assets/pink-top/1.jpeg",
+        "maniquin_image" : [
+            "./Assets/pink-top/1.jpeg",
+            "./Assets/pink-top/2.jpeg",
+            "./Assets/pink-top/3.jpeg",
+            "./Assets/pink-top/4.jpeg",
+            "./Assets/pink-top/5.jpeg",
+            "./Assets/pink-top/6.jpeg"
+        ]
+
+    },
+    {
+        "top_id" : "top_03",
+        "length_id" : "",
+        "main_image" : "./Assets/black-top/1.jpeg",
+        "maniquin_image" : [
+            "./Assets/black-top/1.jpeg",
+            "./Assets/black-top/2.jpeg",
+            "./Assets/black-top/3.jpeg",
+            "./Assets/black-top/4.jpeg",
+            "./Assets/black-top/5.jpeg",
+            "./Assets/black-top/6.jpeg"
+        ]
+
+    }]
+    },
+    {"lengths" : [
+        {
+        "top_id" : "",
+        "length_id" : "length_01",
+        "main_image" : "./Assets/blue-jean/1.jpeg",
+        "maniquin_image" : [
+            "./Assets/blue-jean/1.jpeg",
+            "./Assets/blue-jean/2.jpeg",
+            "./Assets/blue-jean/3.jpeg",
+            "./Assets/blue-jean/4.jpeg",
+            "./Assets/blue-jean/5.jpeg",
+            "./Assets/blue-jean/6.jpeg"
+        ]
+
+    },
+    {
+        "top_id" : "",
+        "length_id" : "length_02",
+        "main_image" : "./Assets/black-jean/1.jpeg",
+        "maniquin_image" : [
+            "./Assets/black-jean/1.jpeg",
+            "./Assets/black-jean/2.jpeg",
+            "./Assets/black-jean/3.jpeg",
+            "./Assets/black-jean/4.jpeg",
+            "./Assets/black-jean/5.jpeg",
+            "./Assets/black-jean/6.jpeg"
+        ]
+
+    },
+    {
+        "top_id" : "",
+        "length_id" : "length_03",
+        "main_image" : "./Assets/cotton-jean/1.jpeg",
+        "maniquin_image" : [
+            "./Assets/cotton-jean/1.jpeg",
+            "./Assets/cotton-jean/2.jpeg",
+            "./Assets/cotton-jean/3.jpeg",
+            "./Assets/cotton-jean/4.jpeg",
+            "./Assets/cotton-jean/5.jpeg",
+            "./Assets/cotton-jean/6.jpeg"
+        ]
+
+    }]
+    },
+    {"combinations" : [
+         {
+        "top_id" : "top_01",
+        "length_id" : "length_01",
+        "main_image" : "./Assets/yellow-blue-jean/1.jpeg",
+        "maniquin_image" : [
+            "./Assets/yellow-blue-jean/1.jpeg",
+            "./Assets/yellow-blue-jean/2.jpeg",
+            "./Assets/yellow-blue-jean/3.jpeg",
+            "./Assets/yellow-blue-jean/4.jpeg",
+            "./Assets/yellow-blue-jean/5.jpeg",
+            "./Assets/yellow-blue-jean/6.jpeg"
+        ]
+
+    },
+    {
+        "top_id" : "top_01",
+        "length_id" : "length_02",
+        "main_image" : "./Assets/yellow-black-jean/1.jpeg",
+        "maniquin_image" : [
+            "./Assets/yellow-black-jean/1.jpeg",
+            "./Assets/yellow-black-jean/2.jpeg",
+            "./Assets/yellow-black-jean/3.jpeg",
+            "./Assets/yellow-black-jean/4.jpeg",
+            "./Assets/yellow-black-jean/5.jpeg",
+            "./Assets/yellow-black-jean/6.jpeg"
+        ]
+
+    },
+    {
+        "top_id" : "top_01",
+        "length_id" : "length_03",
+        "main_image" : "./Assets/yellow-cotton-jean/1.jpeg",
+        "maniquin_image" : [
+            "./Assets/yellow-cotton-jean/1.jpeg",
+            "./Assets/yellow-cotton-jean/2.jpeg",
+            "./Assets/yellow-cotton-jean/3.jpeg",
+            "./Assets/yellow-cotton-jean/4.jpeg",
+            "./Assets/yellow-cotton-jean/5.jpeg",
+            "./Assets/yellow-cotton-jean/6.jpeg"
+        ]
+
+    },
+    {
+        "top_id" : "top_02",
+        "length_id" : "length_01",
+        "main_image" : "./Assets/pink-blue-jean/1.jpeg",
+        "maniquin_image" : [
+            "./Assets/pink-blue-jean/1.jpeg",
+            "./Assets/pink-blue-jean/2.jpeg",
+            "./Assets/pink-blue-jean/3.jpeg",
+            "./Assets/pink-blue-jean/4.jpeg",
+            "./Assets/pink-blue-jean/5.jpeg",
+            "./Assets/pink-blue-jean/6.jpeg"
+        ]
+
+    },
+    {
+        "top_id" : "top_02",
+        "length_id" : "length_02",
+        "main_image" : "./Assets/pink-black-jean/1.jpeg",
+        "maniquin_image" : [
+            "./Assets/pink-black-jean/1.jpeg",
+            "./Assets/pink-black-jean/2.jpeg",
+            "./Assets/pink-black-jean/3.jpeg",
+            "./Assets/pink-black-jean/4.jpeg",
+            "./Assets/pink-black-jean/5.jpeg",
+            "./Assets/pink-black-jean/6.jpeg"
+        ]
+
+    },
+    {
+        "top_id" : "top_02",
+        "length_id" : "length_03",
+        "main_image" : "./Assets/pink-cotton-jean/1.jpeg",
+        "maniquin_image" : [
+            "./Assets/pink-cotton-jean/1.jpeg",
+            "./Assets/pink-cotton-jean/2.jpeg",
+            "./Assets/pink-cotton-jean/3.jpeg",
+            "./Assets/pink-cotton-jean/4.jpeg",
+            "./Assets/pink-cotton-jean/5.jpeg",
+            "./Assets/pink-cotton-jean/6.jpeg"
+        ]
+
+    },
+    {
+        "top_id" : "top_03",
+        "length_id" : "length_01",
+        "main_image" : "./Assets/black-blue-jean/1.jpeg",
+        "maniquin_image" : [
+            "./Assets/black-blue-jean/1.jpeg",
+            "./Assets/black-blue-jean/2.jpeg",
+            "./Assets/black-blue-jean/3.jpeg",
+            "./Assets/black-blue-jean/4.jpeg",
+            "./Assets/black-blue-jean/5.jpeg",
+            "./Assets/black-blue-jean/6.jpeg"
+        ]
+
+    },
+    {
+        "top_id" : "top_03",
+        "length_id" : "length_02",
+        "main_image" : "./Assets/black-black-jean/1.jpeg",
+        "maniquin_image" : [
+            "./Assets/black-black-jean/1.jpeg",
+            "./Assets/black-black-jean/2.jpeg",
+            "./Assets/black-black-jean/3.jpeg",
+            "./Assets/black-black-jean/4.jpeg",
+            "./Assets/black-black-jean/5.jpeg",
+            "./Assets/black-black-jean/6.jpeg"
+        ]
+
+    },
+    {
+        "top_id" : "top_03",
+        "length_id" : "length_03",
+        "main_image" : "./Assets/black-cotton-jean/1.jpeg",
+        "maniquin_image" : [
+            "./Assets/black-cotton-jean/1.jpeg",
+            "./Assets/black-cotton-jean/2.jpeg",
+            "./Assets/black-cotton-jean/3.jpeg",
+            "./Assets/black-cotton-jean/4.jpeg",
+            "./Assets/black-cotton-jean/5.jpeg",
+            "./Assets/black-cotton-jean/6.jpeg"
+        ]
+
+    }]
+    }
+
+]
