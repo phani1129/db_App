@@ -126,14 +126,14 @@ const Maniquin = () =>{
         <>
         <IonHeader>
         <IonToolbar>
-          <IonTitle>Header</IonTitle>
+          <IonTitle>Designs</IonTitle>
         </IonToolbar>
       </IonHeader>
       
         <IonContent>
-            <div className='h-100 min-he' >
+            <div >
         <div className = "maniquin-bg-container">
-            <div className = "maniquin-add-item-container"><button className = "maniquin-add-item" onClick = {handleAddItemBtn}>Try 3D <br />Designs</button></div> 
+            {/* <div className = "maniquin-add-item-container"><button className = "maniquin-add-item" onClick = {handleAddItemBtn}>Try 3D <br />Designs</button></div>  */}
             <div className = "maniquin-container">
                 <img src = {Data[ind]} alt = "maniquin" className = "main-maniquin" onClick = {handleManiquin}/>
             </div>
@@ -191,7 +191,7 @@ const Maniquin = () =>{
      
       }
       { check1 === true || check2 === true ?
-       <div className="class mt-5">
+       <div className="class mt-1">
        <Link to = "/cart" className = "link-item ">
            <IonButton  expand="full"  size="large" onClick = {handleAddToCart} >Add to Cart</IonButton>
            {/* <button className = "add-item-btn" onClick = {handleAddToCart}>Add to Cart</button>   */}
@@ -201,48 +201,6 @@ const Maniquin = () =>{
 
       }
       
-        
-        <div className = "maniquin-item-container"> 
-
-                <h2 className = "tops-heading">Tops</h2>
-                <h2 className = "tops-heading">Bottoms</h2>
-               
-                
-                {/* <div className = "maniquin-apply-btn-container">
-                    <button className = "maniquin-apply-btn" onClick = {handleApply}>Apply</button>
-                </div> */}
-
-              </div>
-        {click ? <div className = {click ? "a active": "a"}>
-            
-              <button className = "close" onClick = {handleBarClose}><FaIcons.FaWindowClose /></button>
-              <div className = "maniquin-item-container">
-                <h2 className = "tops-heading">Tops</h2>
-                <div className = "side-bar-data-container">
-                {maniquinData.map(e => e.tops?.map(each =>( 
-                        <div className = "hands-design-container" onClick = {() =>onSelect(each)} key = {each.top_id}>                        
-                            <img src = {each.main_image} alt = "design" className = {each === selectedTop?"selected":"hands-design"}/>
-                        </div>        
-                    )))}
-                    </div>
-
-                <h2 className = "tops-heading">Bottoms</h2>
-                <div className = "side-bar-data-container">
-                {maniquinData.map(e => e.lengths?.map(each =>(
-                        <div className = "hands-design-container" onClick = {() => onSelectLength(each)} key = {each.length_id}>
-                            <img src = {each.main_image} alt = "design" className = {each === selectedLength?"selected":"hands-design"} />
-                        </div>
-                    )))}
-                </div>
-                
-                {/* <div className = "maniquin-apply-btn-container">
-                    <button className = "maniquin-apply-btn" onClick = {handleApply}>Apply</button>
-                </div> */}
-
-              </div>
-
-            
-        </div> : null} 
         </div>
         </IonContent>
         </>

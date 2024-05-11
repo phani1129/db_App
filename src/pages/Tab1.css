@@ -3,7 +3,7 @@
     padding: 0;
 }
 .dress-type-container{
-    background-color: rgba(209, 205, 205, 0.871);
+    /* background-color: rgba(209, 205, 205, 0.871); */
     border: 1px solid dimgrey;
     border-radius: 8px;
     width: 250px;
@@ -30,7 +30,7 @@
     margin: 0 40px;
 }
 .dress-model-selection-container{
-    background-color: grey;
+    /* background-color: grey; */
     padding-bottom: 70px;
 }
 .custom-curousel{
@@ -45,8 +45,8 @@
 
 @media screen and (max-width:768px){
     .dress-type-container{
-        background-color: rgba(209, 205, 205, 0.871);
-        border: 1px solid dimgrey;
+        /* background-color: rgba(209, 205, 205, 0.871);
+        border: 1px solid dimgrey; */
         border-radius: 8px;
         width: 150px;
         height: 150px;
@@ -77,8 +77,8 @@
 }
 @media screen and ((min-width:768px) and (max-width:1024px)){
     .dress-type-container{
-        background-color: rgba(209, 205, 205, 0.871);
-        border: 1px solid dimgrey;
+        /* background-color: rgba(209, 205, 205, 0.871);
+        border: 1px solid dimgrey; */
         border-radius: 8px;
         width: 200px;
         height: 200px;

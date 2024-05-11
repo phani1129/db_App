@@ -4,7 +4,7 @@ import partsData from './dressparts.json'
 import { Link } from 'react-router-dom'
 import selectedData from './selectedData.json'
 import './selectDesigns.css'
-import { IonContent } from '@ionic/react'
+import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/react'
 
 const DesignSelection = () => {
 
@@ -103,6 +103,11 @@ const DesignSelection = () => {
 
     return(
         <>
+        <IonHeader>
+        <IonToolbar>
+          <IonTitle className='text-center'>Designs</IonTitle>
+        </IonToolbar>
+        </IonHeader>
         <IonContent>
         <div className = "model-section-main-container d-flex flex-column">
             

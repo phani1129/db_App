@@ -17,7 +17,7 @@ import Tab3 from './pages/Tab3';
 import DesignSelection from './pages/selectDesigns';
 import LoginForm from './pages/loginform';
 import Maniquin from './pages/maniquin';
-
+import MainTabs  from './pages/MainTabs';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -37,49 +37,24 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import RegisterForm from './pages/registerform';
+import { useState } from 'react';
 
 setupIonicReact();
 
-const App: React.FC = () => (
+const App: React.FC = () => {
+  const [isLoggedIn,setisLoggedIn] = useState(true);
+  return(
   <IonApp>
     <IonReactRouter>
-      <IonTabs>
-        <IonRouterOutlet>
-          <Route exact path="/tab1">
-            <Tab1 />
-          </Route>
-          <Route exact path = "/select_design/1"><DesignSelection /></Route>
-          <Route exact path = "/select_design/2"><Maniquin /></Route>
-          <Route exact path = "/login"><LoginForm /></Route>
-          <Route exact path = "/register"><RegisterForm /></Route>
-          <Route exact path = "/cart"><Tab2/></Route>
-          <Route exact path="/tab2">
-            <Tab2 />
-          </Route>
-          <Route path="/tab3">
-            <Tab3 />
-          </Route>
-          <Route exact path="/">
-            <Redirect to="/tab1" />
-          </Route>
-        </IonRouterOutlet>
-        <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon aria-hidden="true" icon={home} />
-            <IonLabel>Home</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon aria-hidden="true" icon={cart} />
-            <IonLabel>Cart</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon aria-hidden="true" icon={person} />
-            <IonLabel>Profile</IonLabel>
-          </IonTabButton>
-        </IonTabBar>
-      </IonTabs>
+    {isLoggedIn ? 
+    <Route path="/" component={MainTabs } />  : 
+    <Route path="/login" component={LoginForm}  />
+    }
+    {/* <Route path="/" component={isLoggedIn ? MainTabs : LoginForm} />  */}
+    {/* <Route path="/" component={LoginForm}  /> */}
     </IonReactRouter>
   </IonApp>
-);
+  ) 
+};
 
 export default App;

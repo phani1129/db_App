@@ -3,7 +3,7 @@
     padding: 0;
 }
 .cart-container{
-    background-color: rgb(153, 153, 195);
+    /* background-color: rgb(153, 153, 195); */
    height: 100%;
    overflow: hidden;
 }
@@ -14,12 +14,13 @@
 }
 .cart-item-container{
     display: flex;
-    background-color: rgb(224, 156, 156);
+    /* background-color: rgb(224, 156, 156); */
     width: 90%;
     padding: 20px 0;
     margin: 20px 50px;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid gray;
 }
 .cart-item-image{
     width: 100px;
