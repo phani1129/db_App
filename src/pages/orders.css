@@ -1,0 +1,25 @@
+.orders-container{
+    display: flex;
+    border: 1px solid ;
+    border-radius: 6px;
+    padding: 20px 0;
+    margin: 20px;
+}
+.orders-heading{
+    font-size: 40px;
+    font-weight: 700;
+}
+.order-image{
+    width : 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+.order-name{
+    font-size: 40px;
+    margin-left: 30px;
+    align-self: center;
+}
+.link-item{
+    text-decoration: none;
+    color: #000;
+}

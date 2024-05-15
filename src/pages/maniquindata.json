@@ -14,6 +14,9 @@
         "top_id" : "top_01",
         "length_id" : "",
         "main_image" : "./Assets/yellow-top/1.jpeg",
+        "id" : "01",
+        "name" : "Yellow Top",
+        "price" : 1999,
         "maniquin_image" : [
             "./Assets/yellow-top/1.jpeg",
             "./Assets/yellow-top/2.jpeg",
@@ -28,6 +31,9 @@
         "top_id" : "top_02",
         "length_id" : "",
         "main_image" : "./Assets/pink-top/1.jpeg",
+        "id" : "02",
+        "name" : "Pink Top",
+        "price" : 1399,
         "maniquin_image" : [
             "./Assets/pink-top/1.jpeg",
             "./Assets/pink-top/2.jpeg",
@@ -42,6 +48,9 @@
         "top_id" : "top_03",
         "length_id" : "",
         "main_image" : "./Assets/black-top/1.jpeg",
+        "id" : "03",
+        "name" : "Black Top",
+        "price" : 1099,
         "maniquin_image" : [
             "./Assets/black-top/1.jpeg",
             "./Assets/black-top/2.jpeg",
@@ -58,6 +67,9 @@
         "top_id" : "",
         "length_id" : "length_01",
         "main_image" : "./Assets/blue-jean/1.jpeg",
+        "id" : "04",
+        "name" : "Blue Jean",
+        "price" : 899,
         "maniquin_image" : [
             "./Assets/blue-jean/1.jpeg",
             "./Assets/blue-jean/2.jpeg",
@@ -72,6 +84,9 @@
         "top_id" : "",
         "length_id" : "length_02",
         "main_image" : "./Assets/black-jean/1.jpeg",
+        "id" : "05",
+        "name" : "Black Jean",
+        "price" : 999,
         "maniquin_image" : [
             "./Assets/black-jean/1.jpeg",
             "./Assets/black-jean/2.jpeg",
@@ -86,6 +101,9 @@
         "top_id" : "",
         "length_id" : "length_03",
         "main_image" : "./Assets/cotton-jean/1.jpeg",
+        "id" : "06",
+        "name" : "Cotton Jean",
+        "price" : 799,
         "maniquin_image" : [
             "./Assets/cotton-jean/1.jpeg",
             "./Assets/cotton-jean/2.jpeg",

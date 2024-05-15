@@ -5,7 +5,10 @@
 .cart-container{
     /* background-color: rgb(153, 153, 195); */
    height: 100%;
-   overflow: hidden;
+   overflow: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 }
 .cart-heading{
     font-size: 50px;
@@ -45,4 +48,20 @@
     font-weight: 700;
     margin: 500px 0px;
     text-align: center;
+}
+.total-price{
+    font-size: 30px;
+    font-weight: 600;
+    background-color: aquamarine;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.check-out-container{
+    /* margin-bottom: 150px; */
+}
+.checkout-button{
+    padding : 20px 0;
+    font-size: 30px;
 }

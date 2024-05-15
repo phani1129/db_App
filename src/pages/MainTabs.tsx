@@ -6,6 +6,11 @@ import Tab2 from './Tab2';
 import Tab3 from './Tab3';
 import DesignSelection from './selectDesigns';
 import Maniquin from './maniquin';
+import EditProfile from "./editProfile";
+import RegisterForm from "./registerform";
+import LoginForm from "./loginform";
+import Invoice from "./invoice";
+import Orders from "./orders";
 const MainTabs: React.FC = () => {
     return (
         <IonTabs>
@@ -16,6 +21,11 @@ const MainTabs: React.FC = () => {
           <Route exact path = "/select_design/1"><DesignSelection /></Route>
           <Route exact path = "/select_design/2"><Maniquin /></Route>
           <Route exact path = "/cart"><Tab2/></Route>
+          <Route exact path = "/edit-profile"><EditProfile /></Route>
+          <Route exact path = "/register"><RegisterForm /></Route>
+          <Route exact path = "/login"><LoginForm /></Route>
+          <Route exact path = "/orders"><Orders /></Route>
+          <Route exact path = "/order/:id"><Invoice /></Route>
           <Route exact path="/tab2">
             <Tab2 />
           </Route>

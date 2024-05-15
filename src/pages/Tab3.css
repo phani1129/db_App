@@ -80,3 +80,13 @@
         background-color: gray;
     }
 }
+.edit-profie{
+    font-size: 30px;
+    font-weight: 600;
+}
+.edit-icon{
+    font-size: 30px;
+}
+.link-item{
+    text-decoration: none;
+}

@@ -98,8 +98,15 @@ const Maniquin = () =>{
     }
 
     const handleAddToCart = () =>{
-        cartData.push(selectedTop)
-        cartData.push(selectedLength)
+        if(selectedTop !== "" && selectedLength !== ""){
+            cartData.push(selectedTop)
+            cartData.push(selectedLength)
+        }else if(selectedTop !== "" && selectedLength === ""){
+            cartData.push(selectedTop)
+        }else if(selectedData === "" && selectedLength !== ""){
+            cartData.push(selectedLength)
+        }
+        
 
     }
 

@@ -1,0 +1,86 @@
+.invoice-main-container{
+    background-color: whitesmoke;
+    background-size: cover;
+    /* padding: 50px 200px; */
+    width: 100%;
+}
+.invoice-container{
+    background-color: white;
+    padding-bottom: 70px;
+}
+.invoice-heading{
+    padding: 20px 0;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.invoice-brand-name-heading{
+    font-size: 40px;
+}
+.invoice-darjiBhai-address{
+    font-size: 28px;
+    font-weight: 400;
+}
+.invoice-darjibhai-brand-logo{
+    border: 0px solid;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(180, 178, 178);
+    font-size: 50px;
+}
+.invoice-top-container{
+    display: flex;
+    justify-content: space-between;   
+}
+.invoice-details-container{
+    margin : 0 60px;
+}
+.invoice-horizontal-line{
+    width: 100%;
+    background-color: black;
+}
+.invoice-customer-details{
+    font-size: 25px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+.invoice-customer-data{
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.invoice-measurement-table-data{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+table{
+    width: 500px;
+    border: 2px solid;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+th{
+    border: 2px solid;
+}
+td{
+    border: 1px solid;
+}
+.invoice-footer{
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+.invoice-footer-brand-name{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: underline;
+}
