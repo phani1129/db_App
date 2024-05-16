@@ -8,14 +8,13 @@ import { IoMdEye } from "react-icons/io";
 import { IoIosEyeOff } from "react-icons/io";
 
 
-var userData = []
-
 let registeredData = JSON.parse(localStorage.getItem("registrationData"))
+// console.log(registeredData.username)
 
 
 class EditProfile extends Component{
 
-    state = {userDetails : {},username : registeredData[0].username,lastname: "",gender: "",dob:"", email: "", phonenumber: registeredData[0].phonenumber, password : registeredData[0].password,recreatepassword : "",jwtToken:"",
+    state = {id : "",username : registeredData.username,lastname: "",gender: "",dob:"", email: "", phonenumber: registeredData.phonenumber, password : registeredData.password,jwtToken:"",
     usernameErrorMsg : "",
     lastnameErrorMsg : "",
     emailErrorMsg : "",
@@ -143,14 +142,25 @@ class EditProfile extends Component{
         }
     }
     
-        onSubmitRegisterForm = event =>{
+    onSubmitRegisterForm = (event: { preventDefault: () => void; }) =>{
         // console.log(registeredData[0].id)
-        const {userDetails,username,lastname,gender,dob,email,phonenumber,password} = this.state
+        const {username,firstname,lastname,gender,dob,email,phonenumber,password,jwtToken} = this.state
         const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
         event.preventDefault()
-
-        if(username.length > 2 && email.match(emailPattern) && phonenumber.length === 10 && password.length > 7){
-            userDetails.id = registeredData[0].id
+        var userDetails ={
+            id:'',
+            username : registeredData.username,
+            lastname: "",
+            gender: "",
+            dob:"", 
+            email: "", 
+            phonenumber: registeredData.phonenumber, 
+            password : registeredData.password,
+            recreatepassword : "",
+            jwtToken:"",
+        }
+        if(email.match(emailPattern) && phonenumber.length === 10 && password.length > 7){
+            userDetails.id = registeredData.id
             userDetails.username = username
             userDetails.lastname = lastname
             userDetails.gender = gender
@@ -158,23 +168,25 @@ class EditProfile extends Component{
             userDetails.email = email
             userDetails.phonenumber = phonenumber
             userDetails.password = password
-            userDetails.jwtToken = username+password+lastname+dob
-            userData.push(userDetails)
-            localStorage.setItem("registrationData",JSON.stringify(userData))
-            this.setState({errorMsg : ""})
+            userDetails.jwtToken = firstname+password+lastname+dob
+
+            // userData.push(userDetails)
+            localStorage.setItem("registrationData",JSON.stringify(userDetails))
             const {history} = this.props
             history.replace("/tab3")
+
+            this.setState({errorMsg : ""})
             this.setState({username:username})
-            this.setState({lastname:lastname})
-            this.setState({gender:""})
-            this.setState({dob:""})
-            this.setState({email:""})
-            this.setState({phonenumber:""})
-            this.setState({password:""})
-            // this.setState({userDetails:{}})
+            this.setState({lastname:userDetails.lastname})
+            this.setState({gender:gender})
+            this.setState({dob:dob})
+            this.setState({email:email})
+            this.setState({phonenumber:phonenumber})
+            this.setState({password:password})
+            
         }else{
             this.setState({errorMsg : "*Please fill Validate details"})
-    }
+        }
         
     }
 

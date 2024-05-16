@@ -7,9 +7,8 @@ import { IoCloseCircleSharp } from "react-icons/io5";
 
 
 
-const userData = JSON.parse(localStorage.getItem("registrationData"))[0]
-// const time = new Date()
-// console.log(time)
+const userData = JSON.parse(localStorage.getItem("registrationData"))
+
 
 const orderList = JSON.parse(localStorage.getItem("ordersList"))
 // console.log(orderList)
@@ -19,7 +18,7 @@ const Invoice = () =>{
     
     const {id} = useParams()
     // console.log(id)
-    const order = orderList.find((each) => each.id === id)  
+    const order = orderList.find((each: { id: any }) => each.id === id)  
     const {name,price} = order
 
     return(

@@ -32,11 +32,11 @@ const Tab3: React.FC = () => {
               </div>
               
                 <div className = "d-flex flex-row justify-content-center">
-                    <h1 className = "user-profile-pic">{userData[0].username[0]}</h1>
+                    <h1 className = "user-profile-pic">{userData.username[0]}</h1>
                 </div>
-                <h2 className = "user-profile-name text-center mt-2">{userData[0].username}</h2>
-                <p className = "user-details">+91 {userData[0].phonenumber.substring(0,3)}XX XXX{userData[0].phonenumber.substring(7,9)}</p>
-                <p className = "user-details">{userData[0].email}</p>    
+                <h2 className = "user-profile-name text-center mt-2">{userData.username} {userData.lastname}</h2>
+                <p className = "user-details">+91 {userData.phonenumber.substring(0,3)}XX XXX{userData.phonenumber.substring(7,9)}</p>
+                <p className = "user-details">{userData.email}</p>    
             </div>
             </div>
 

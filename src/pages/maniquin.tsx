@@ -12,7 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { headset } from 'ionicons/icons';
 import maniquinData from './maniquindata.json'
 
-const selectedData = []
+const selectedData: string[] = []
 
 const Maniquin = () =>{
 
@@ -33,6 +33,8 @@ const Maniquin = () =>{
 
     // const [cartData,setCartData] = useState([])
     // const [selectedData,setSelectedData] = useState([])
+
+    let cartData = []
 
     const handleManiquin = () =>{
         setInd(ind+1)
@@ -62,7 +64,7 @@ const Maniquin = () =>{
             }))
         }else{
             maniquinData.filter(e => e.combinations?.map(each =>{
-                if(each.top_id === item.top_id && each.length_id === selectedLength.length_id){
+                if(each.top_id === item.top_id && each.length_id === selectedLength.length){
                     setManiquinData(each.maniquin_image)
                 }
             }))

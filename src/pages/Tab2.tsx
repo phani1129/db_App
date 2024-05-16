@@ -24,7 +24,7 @@ data.forEach(each => totalPrice += each.price)
   }
 
   const onCheckOut = () =>{
-    localStorage.setItem("ordersList",data)
+    localStorage.setItem("ordersList",JSON.stringify(data))
   }
 
   return (
@@ -36,7 +36,15 @@ data.forEach(each => totalPrice += each.price)
       
       <div className="cart-container">
         <div>
-          {data.length === 0 ? <h1 className="items-not-found-heading">ITEMS NOT FOUND</h1> : null}
+          {data.length === 0 ?
+            <div className = "items-not-found-container">
+              <h1 className="items-not-found-heading">ITEMS NOT FOUND</h1>
+                <div className = "d-flex flex-row justify-content-center">
+                  <Link to = "/select_design/2">
+                      <button className = "btn btn-primary custom-add-btn">Continue Shopping</button>
+                  </Link>
+              </div>
+            </div> : ""}
 
           {data.map(each => <div className="cart-item-container" >
             <div className="d-flex">
@@ -51,14 +59,21 @@ data.forEach(each => totalPrice += each.price)
         </div>
 
         {data.length !== 0 ? <div className = "check-out-container fixed-bottom">
+
+        <div className = "d-flex flex-row justify-content-center mb-5">
+              <Link to = "/select_design/2">
+                  <button className = "btn btn-primary custom-add-btn">Add More Items</button>
+              </Link>
+          </div>
+
               <div className = "total-price">Total Amount : {totalPrice}</div>
               <Link to = "/orders" className = "link-item">
                 <button className = "btn btn-primary w-100 checkout-button" onClick = {onCheckOut}>CheckOut</button>
               </Link>
           </div> : ""}
 
-        
         </div>
+
       </IonContent></>
   );
 };
