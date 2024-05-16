@@ -90,3 +90,8 @@
 .link-item{
     text-decoration: none;
 }
+.user-details{
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+}

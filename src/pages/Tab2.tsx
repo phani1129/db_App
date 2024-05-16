@@ -1,9 +1,13 @@
 import { useState } from 'react';
 import { IonContent, IonHeader, IonTitle, IonToolbar} from '@ionic/react';
 import './Tab2.css';
-import cartData from './cartData.json'
+// import cartData from './cartData.json'
 import { MdDelete } from "react-icons/md";
 import { Link } from 'react-router-dom';
+
+
+const cartData = JSON.parse(localStorage.getItem("cartData"))
+// console.log(cartData)
 
 const Tab2: React.FC = () => {
 
@@ -13,14 +17,14 @@ let totalPrice = 0
 data.forEach(each => totalPrice += each.price)
 
   const handleRemove = (item) =>{
-    console.log(item)
+    // console.log(item)
     const updatedData = data.filter(each => each.top_id !== item.top_id || each.length_id !== item.length_id);
     
     setData(updatedData)
   }
 
   const onCheckOut = () =>{
-    localStorage.setItem("ordersList",JSON.stringify(data))
+    localStorage.setItem("ordersList",data)
   }
 
   return (

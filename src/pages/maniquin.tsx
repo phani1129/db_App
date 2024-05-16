@@ -103,11 +103,10 @@ const Maniquin = () =>{
             cartData.push(selectedLength)
         }else if(selectedTop !== "" && selectedLength === ""){
             cartData.push(selectedTop)
-        }else if(selectedData === "" && selectedLength !== ""){
+        }else if(selectedTop === "" && selectedLength !== ""){
             cartData.push(selectedLength)
         }
-        
-
+        localStorage.setItem("cartData",JSON.stringify(cartData))
     }
 
     // const handleDisSelectItem = (item) =>{

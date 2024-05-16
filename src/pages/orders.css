@@ -23,3 +23,9 @@
     text-decoration: none;
     color: #000;
 }
+.back-to-home{
+    font-size: 40px;
+    position: absolute;
+    top: 2%;
+    left: 4%;
+}

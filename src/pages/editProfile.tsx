@@ -1,4 +1,5 @@
 import React,{Component} from "react";
+import { withRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css'
 import './editProfile.css'
@@ -14,9 +15,8 @@ let registeredData = JSON.parse(localStorage.getItem("registrationData"))
 
 class EditProfile extends Component{
 
-    state = {userDetails : {},username : registeredData[0].username,firstname: "",lastname: "",gender: "",dob:"", email: "", phonenumber: registeredData[0].phonenumber, password : registeredData[0].password,recreatepassword : "",jwtToken:"",
+    state = {userDetails : {},username : registeredData[0].username,lastname: "",gender: "",dob:"", email: "", phonenumber: registeredData[0].phonenumber, password : registeredData[0].password,recreatepassword : "",jwtToken:"",
     usernameErrorMsg : "",
-    firstnameErrorMsg : "",
     lastnameErrorMsg : "",
     emailErrorMsg : "",
     phonenumberErrorMsg : "",
@@ -43,9 +43,9 @@ class EditProfile extends Component{
     }
 
 
-    onChangeFirstname = event =>{
-        this.setState({firstname : event.target.value})
-    }
+    // onChangeFirstname = event =>{
+    //     this.setState({firstname : event.target.value})
+    // }
 
     onChangeLastname = event =>{
         this.setState({lastname : event.target.value})
@@ -78,16 +78,16 @@ class EditProfile extends Component{
         }
     }
 
-    validateFirstName = event => {
-        if(event.target.value === ""){
-            this.setState({firstnameErrorMsg:"*Required"})
-        }else if(event.target.value.length < 3){
-            this.setState({firstnameErrorMsg:"*Please enter Valid Name"})
-        }
-        else{
-            this.setState({firstnameErrorMsg:""})
-        }
-    }
+    // validateFirstName = event => {
+    //     if(event.target.value === ""){
+    //         this.setState({firstnameErrorMsg:"*Required"})
+    //     }else if(event.target.value.length < 3){
+    //         this.setState({firstnameErrorMsg:"*Please enter Valid Name"})
+    //     }
+    //     else{
+    //         this.setState({firstnameErrorMsg:""})
+    //     }
+    // }
 
     validateLastName = event => {
         if(event.target.value === ""){
@@ -142,80 +142,68 @@ class EditProfile extends Component{
             this.setState({passwordErrorMsg:""})
         }
     }
-
-    onSubmitRegisterForm = event =>{
-        console.log(registeredData[0].id)
-        const {userDetails,username,firstname,lastname,gender,dob,email,phonenumber,password} = this.state
+    
+        onSubmitRegisterForm = event =>{
+        // console.log(registeredData[0].id)
+        const {userDetails,username,lastname,gender,dob,email,phonenumber,password} = this.state
         const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
         event.preventDefault()
-        
-        if(firstname.length > 2 && email.match(emailPattern) && phonenumber.length === 10 && password.length > 7){
+
+        if(username.length > 2 && email.match(emailPattern) && phonenumber.length === 10 && password.length > 7){
             userDetails.id = registeredData[0].id
             userDetails.username = username
-            userDetails.firstname = firstname
             userDetails.lastname = lastname
             userDetails.gender = gender
             userDetails.dob = dob
             userDetails.email = email
             userDetails.phonenumber = phonenumber
             userDetails.password = password
-            userDetails.jwtToken = firstname+password+lastname+dob
+            userDetails.jwtToken = username+password+lastname+dob
             userData.push(userDetails)
             localStorage.setItem("registrationData",JSON.stringify(userData))
             this.setState({errorMsg : ""})
-            // this.setState({firstname:""})
-            // this.setState({lastname:""})
-            // this.setState({gender:""})
-            // this.setState({dob:""})
-            // this.setState({email:""})
-            // this.setState({phonenumber:""})
-            // this.setState({password:""})
-            this.setState({userDetails:{}})
+            const {history} = this.props
+            history.replace("/tab3")
+            this.setState({username:username})
+            this.setState({lastname:lastname})
+            this.setState({gender:""})
+            this.setState({dob:""})
+            this.setState({email:""})
+            this.setState({phonenumber:""})
+            this.setState({password:""})
+            // this.setState({userDetails:{}})
         }else{
             this.setState({errorMsg : "*Please fill Validate details"})
-        }
+    }
         
     }
 
     render(){
-        const {username,firstname,lastname,password,email,phonenumber,usernameErrorMsg,firstnameErrorMsg,lastnameErrorMsg,emailErrorMsg,phonenumberErrorMsg,passwordErrorMsg,errorMsg,DOBerrorMsg,onHide,textType} = this.state
+        const {username,lastname,password,email,phonenumber,usernameErrorMsg,lastnameErrorMsg,emailErrorMsg,phonenumberErrorMsg,passwordErrorMsg,errorMsg,DOBerrorMsg,onHide,textType} = this.state
         return(
         <IonContent>
         <div className = "edit-register-form-main-container">
             <form className = "edit-register-form-container" onSubmit = {this.onSubmitRegisterForm}>
-                <h1 className = "edit-form-heading mb-3">Register Here</h1>
+                <h1 className = "edit-form-heading mb-3">Edit Your Profile</h1>
             <div className = "edit-register-container">
-
-
-            <div className = "edit-input-container">
-                <div className = "edit-input-values-container">
-                    <div>
-                        <label className="edit-input-label" htmlFor="firstname">
-                            USER NAME
-                        </label> <br />
-                        <input type="text" id="username" className="edit-input-filed" value = {username} onChange = {this.onChangeUsername} onBlur={this.validateUsername} placeholder = "Username" />
-                        <p className = "edit-validation-details">{usernameErrorMsg}</p>
-                    </div>
-                </div>
-            </div>
 
 
                 <div className = "edit-input-container">
 
                     <div className = "edit-input-values-container">
-                        <div>
-                            <label className="edit-input-label" htmlFor="firstname">
-                                FIRST NAME
-                            </label> <br />
-                            <input type="text" id="firstname" className="edit-input-filed" value = {firstname || ""} onChange = {this.onChangeFirstname} onBlur={this.validateFirstName} placeholder = "Firstname" />
-                            <p className = "edit-validation-details">{firstnameErrorMsg}</p>
-                        </div>
+                    <div>
+                        <label className="edit-input-label" htmlFor="firstname">
+                            FIRST NAME
+                        </label> <br />
+                        <input type="text" id="username" className="edit-input-filed" value = {username} onChange = {this.onChangeUsername} onBlur={this.validateUsername} placeholder = "Username" />
+                        <p className = "edit-validation-details">{usernameErrorMsg}</p>
+                    </div>
 
                         <div>
                             <label className="edit-input-label" htmlFor="lastname">
                                 LAST NAME
                             </label> <br />
-                            <input type="text" id="lastname" className="edit-input-filed" value = {lastname || ""} onChange = {this.onChangeLastname} onBlur={this.validateLastName} placeholder = "Lastname"/>
+                            <input type="text" id="lastname" className="edit-input-filed" value = {lastname} onChange = {this.onChangeLastname} onBlur={this.validateLastName} placeholder = "Lastname"/>
                             <p className = "validation-details">{lastnameErrorMsg}</p>
                         </div>
                     </div>
@@ -254,7 +242,7 @@ class EditProfile extends Component{
                             <label className="edit-input-label" htmlFor="mail">
                                 EMAIL
                             </label> <br />
-                            <input type="mail" id="mail" className="edit-input-filed" value = {email || ""} onChange = {this.onChangeMail} onBlur={this.validateEmail} placeholder = "Email"/>
+                            <input type="mail" id="mail" className="edit-input-filed" value = {email} onChange = {this.onChangeMail} onBlur={this.validateEmail} placeholder = "Email"/>
                             <p className = "edit-validation-details">{emailErrorMsg}</p>
                         </div>
 
@@ -288,7 +276,7 @@ class EditProfile extends Component{
                         Update
                     </button>
                     <p className = "edit-validation-details">{errorMsg}</p>
-                    <p className = "edit-already-have-account">Already have an account? <Link to = "/login" className = "login-now-link">Login now</Link></p>
+                    {/* <p className = "edit-already-have-account">Already have an account? <Link to = "/login" className = "login-now-link">Login now</Link></p> */}
                 </div> 
             </div>
             </form>
@@ -298,4 +286,4 @@ class EditProfile extends Component{
     }
 }
 
-export default EditProfile
+export default withRouter(EditProfile)

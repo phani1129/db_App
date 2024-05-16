@@ -11,6 +11,10 @@ import { FaUserEdit } from "react-icons/fa";
 
 import './Tab3.css';
 
+const userData = JSON.parse(localStorage.getItem("registrationData"))
+// console.log(userData)
+const ordersList = JSON.parse(localStorage.getItem("ordersList"))
+
 const Tab3: React.FC = () => {
   return (
     <> <IonHeader>
@@ -28,9 +32,11 @@ const Tab3: React.FC = () => {
               </div>
               
                 <div className = "d-flex flex-row justify-content-center">
-                    <h1 className = "user-profile-pic">B</h1>
+                    <h1 className = "user-profile-pic">{userData[0].username[0]}</h1>
                 </div>
-                <h2 className = "user-profile-name text-center mt-2">Bhaskar Potnuru</h2>    
+                <h2 className = "user-profile-name text-center mt-2">{userData[0].username}</h2>
+                <p className = "user-details">+91 {userData[0].phonenumber.substring(0,3)}XX XXX{userData[0].phonenumber.substring(7,9)}</p>
+                <p className = "user-details">{userData[0].email}</p>    
             </div>
             </div>
 
@@ -39,7 +45,7 @@ const Tab3: React.FC = () => {
           <IonItem button={true}>
             <IonIcon color="danger" slot="start" icon={listCircle} size="large"></IonIcon>
             <IonLabel>Orders</IonLabel>
-            <IonNote slot="end">6</IonNote>
+            <IonNote slot="end">{ordersList.length}</IonNote>
           </IonItem>
         </Link>
 

@@ -1,7 +1,9 @@
 import React from 'react'
 import './invoice.css'
 import { useParams } from 'react-router'
+import { Link } from 'react-router-dom'
 import { IonContent } from '@ionic/react'
+import { IoCloseCircleSharp } from "react-icons/io5";
 
 
 
@@ -16,7 +18,7 @@ const orderList = JSON.parse(localStorage.getItem("ordersList"))
 const Invoice = () =>{
     
     const {id} = useParams()
-    console.log(id)
+    // console.log(id)
     const order = orderList.find((each) => each.id === id)  
     const {name,price} = order
 
@@ -25,6 +27,9 @@ const Invoice = () =>{
         <div className = "invoice-main-container">
             <div className = "invoice-container">
                 <h1 className = "invoice-heading">INVOICE</h1>
+                <Link to = "/orders" className = "link-item">
+                    <IoCloseCircleSharp className = "close-icon"/>
+                </Link>
 
                     <div className = "invoice-details-container">
 
