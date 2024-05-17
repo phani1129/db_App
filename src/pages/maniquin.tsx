@@ -4,7 +4,6 @@ import './maniquin.css'
 import { IonButton, IonContent, IonHeader, IonImg, IonItem, IonLabel, IonList, IonSegment, IonSegmentButton, IonThumbnail, IonTitle, IonToolbar } from '@ionic/react'
 import * as FaIcons from "react-icons/fa";
 import { MdCancel } from "react-icons/md";
-import cartData from './cartData.json'
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
@@ -31,10 +30,9 @@ const Maniquin = () =>{
     const [check1,setCheck1] = useState(false)
     const [check2,setCheck2] = useState(false)
 
-    // const [cartData,setCartData] = useState([])
+    const [cartData,setCartData] = useState([])
     // const [selectedData,setSelectedData] = useState([])
 
-    let cartData = []
 
     const handleManiquin = () =>{
         setInd(ind+1)
@@ -103,10 +101,13 @@ const Maniquin = () =>{
         if(selectedTop !== "" && selectedLength !== ""){
             cartData.push(selectedTop)
             cartData.push(selectedLength)
+            
         }else if(selectedTop !== "" && selectedLength === ""){
             cartData.push(selectedTop)
+            
         }else if(selectedTop === "" && selectedLength !== ""){
             cartData.push(selectedLength)
+           
         }
         localStorage.setItem("cartData",JSON.stringify(cartData))
     }
