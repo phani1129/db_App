@@ -14,7 +14,7 @@ const Tab2: React.FC = () => {
 
 const [data,setData] = useState(cartData)
 let totalPrice = 0
-data.forEach(each => totalPrice += each.price)
+// data.forEach(each => totalPrice += each.price)
 
   const handleRemove = (item) =>{
     // console.log(item)

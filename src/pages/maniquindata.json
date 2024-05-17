@@ -1,12 +1,12 @@
 [
     
     {   "main_maniquin" : [
-            "./Assets/main-maniquinn/main-1.jpeg",
-            "./Assets/main-maniquinn/main-2.jpeg",
-            "./Assets/main-maniquinn/main-3.jpeg",
-            "./Assets/main-maniquinn/main-4.jpeg",
-            "./Assets/main-maniquinn/main-5.jpeg",
-            "./Assets/main-maniquinn/main-6.jpeg"
+            "https://res.cloudinary.com/dosckylqx/image/upload/v1715920629/home-1_txbtbp.jpg",
+            "https://res.cloudinary.com/dosckylqx/image/upload/v1715920663/home-2_kehvei.jpg",
+            "https://res.cloudinary.com/dosckylqx/image/upload/v1715920711/home-3_vsmpiy.jpg",
+            "https://res.cloudinary.com/dosckylqx/image/upload/v1715920711/home-4_ecjkyf.jpg",
+            "https://res.cloudinary.com/dosckylqx/image/upload/v1715920711/home-5_ncpimo.jpg",
+            "https://res.cloudinary.com/dosckylqx/image/upload/v1715920711/home-6_s5jhia.jpg"
         ]
     },
     { "tops":[
