@@ -96,6 +96,7 @@ const Maniquin = () =>{
         selectedData.push(selectedLength)
         console.log(selectedData)
     }
+    console.log(selectedTop)
 
     const handleAddToCart = () =>{
         if(selectedTop !== "" && selectedLength !== ""){
@@ -144,11 +145,15 @@ const Maniquin = () =>{
         <div className = "maniquin-bg-container">
             {/* <div className = "maniquin-add-item-container"><button className = "maniquin-add-item" onClick = {handleAddItemBtn}>Try 3D <br />Designs</button></div>  */}
             <div className = "maniquin-container">
+                <div className = "d-flex flex-column mt-5">
+                    {selectedTop !== ""?<img src = {selectedTop.main_image} className= "selected-item m-2" alt = "selecteditem"/>:""}
+                    {selectedLength !== "" ?<img src = {selectedLength.main_image} className= "selected-item m-2" alt = "selecteditem"/>:""}
+                </div>
                 <img src = {Data[ind]} alt = "maniquin" className = "main-maniquin" onClick = {handleManiquin}/>
             </div>
            
             
-        </div>
+                </div>
     
                 {/* {selectedData.length > 0 ? <h1 className = "selected-items-maniquinn">Selected Items : </h1> :""}
                 {selectedData.map(each =>{
